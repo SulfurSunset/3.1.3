@@ -66,3 +66,28 @@ elif fried == "Yes" or fried == "yes":
 else:
   fried = ""
   friedsize = ""
+
+if friedsize != "":
+  recipt.append(friedsize)
+  recipt.append(friedprice)
+
+condommint = input("Would you like any Ketchup for $0.25 each? Yes or No. ")
+
+if condommint == "No" or condommint == "no":
+  condommint = ""
+
+if condommint == "Yes" or condommint == "yes":
+  qty = float(input("How many would you like? "))
+  condomprice = qty * .25
+
+if condommint != "":
+  recipt.append(qty)
+  recipt.append(condomprice)
+
+total = friedprice + soadprice + sandprice + condomprice
+
+print(sand, sandprice)
+print(beverage, soadprice)
+print(friedsize, friedprice)
+print(qty, condomprice)
+print(total)
