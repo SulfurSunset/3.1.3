@@ -41,3 +41,28 @@ elif beverage == 'Yes' or beverage == 'yes':
 else:
   beverage = ""
   size = ""
+
+if size != "":
+  recipt.append(size)
+  recipt.append(soadprice)
+
+fried = input("Would you like fries with your meal? Yes or No. ")
+
+if fried == "no" or fried == "No":
+  fried = ""
+  friedsize = ""
+elif fried == "Yes" or fried == "yes":
+  friedsize = input("What size? We have Small for $1.00, Medium for $1.50, or Large for $2.00 ")
+  if friedsize == "Small" or friedsize == "small":
+    megasize = input("Would you like to Megasize your fries? Yes or No. ")
+    if megasize == "Yes" or megasize == "yes":
+      friedprice == 2.00
+    else:
+      friedprice == 1.00
+  elif friedsize == "Medium" or friedsize == "medium":
+    friedprice = 1.50
+  elif friedsize == "Large" or friedsize == "large":
+    friedprice = 2.00
+else:
+  fried = ""
+  friedsize = ""
