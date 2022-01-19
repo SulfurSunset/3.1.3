@@ -18,4 +18,5 @@ if sand == "Tofu" or sand == "tofu":
   total = 5.75
   sandprice = 5.75
 recipt.append(sand)
+
 recipt.append(sandprice)
