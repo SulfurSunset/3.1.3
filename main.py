@@ -20,3 +20,24 @@ if sand == "Tofu" or sand == "tofu":
 recipt.append(sand)
 
 recipt.append(sandprice)
+
+beverage = input("Would you like a beverage? Yes or No. ")
+
+
+if beverage == 'no' or beverage == 'No':
+  beverage = ""
+  size = ""
+elif beverage == 'Yes' or beverage == 'yes':
+  size = input("What size would you like? \nWe have Small for $1.00, Medium for $1.75, or large for $2.25. ")
+  if size == "Small" or size == "small":
+    soadprice = 1.00
+    beverage == "Small"
+  if size == "Medium" or size == "medium":
+    soadprice = 1.75
+    beverage == "Medium"
+  if size == "Large" or size == "large":
+    soadprice = 2.25
+    beverage == "Large"
+else:
+  beverage = ""
+  size = ""
