@@ -90,4 +90,5 @@ print(sand, sandprice)
 print(beverage, soadprice)
 print(friedsize, friedprice)
 print(qty, condomprice)
+
 print(total)
